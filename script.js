@@ -4,7 +4,7 @@ $(function() {
     $("iframe").contents().find("html").html("<html><head><style>" + $("#cssPanel").val() + "</style></head><body>" +
       $("#htmlPanel").val() + "</body></html>");
 
-    document.getElementById("outputPanel").contentWindow.eval($("#javascriptPanel").val());
+    //document.getElementById("outputPanel").contentWindow.eval($("#javascriptPanel").val());
   }
 
   $(".btnToggle").hover(function() {
@@ -23,7 +23,8 @@ $(function() {
 
     $("#" + panelId).toggleClass("hidden");
 
-    var activePanels = 4 - $('.hidden').length;
+    //change 3 to 4 when allowing js panel
+    var activePanels = 3 - $('.hidden').length;
 
     $(".panel").width($(window).width() / activePanels - 5);
   });
@@ -37,8 +38,5 @@ $(function() {
   $("textarea").on('change keyup paste', function() {
     updateOutput();
   });
-
-
-
 
 });

@@ -69,3 +69,15 @@ iframe {
 .hidden {
   display: none;
 }
+
+span {
+  font-size: 50%;
+}
+
+.clearFloat {
+  clear: both;
+}
+
+footer {
+  text-align: center;
+}
