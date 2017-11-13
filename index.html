@@ -16,34 +16,31 @@
 <body>
   <div id="header">
     <div id="logo">
-      CodePlay &trade;
+      CodePlay &trade; <span>*JavaScript feature disabled due to security reasons* </span>
     </div>
     <div class="sectionButtons">
       <div id="html" class="btnToggle defaultActive "> HTML </div>
       <div id="css" class="btnToggle"> CSS </div>
       <div id="javascript" class="btnToggle"> JavaScript </div>
       <div id="output" class="btnToggle defaultActive "> Output </div>
-
     </div>
   </div>
 
   <!-- Panels -->
   <div class="bodyContainer">
-    <textarea id="htmlPanel" class="panel"><p id="para">Hello</p></textarea>
+    <textarea id="htmlPanel" class="panel"><p>Hello World</p></textarea>
     <textarea id="cssPanel" class="panel hidden">p {color:green;}</textarea>
-    <textarea id="javascriptPanel" class="panel hidden">document.getElementById("para").innerHTML="Helloooo";</textarea>
+    <!--<textarea id="javascriptPanel" class="panel hidden"> </textarea>-->
     <iframe id="outputPanel" class="panel"></iframe>
   </div>
 
-
-  <footer style="clear: both;">
-    <p style="text-align: center;">&copy; Tanushka Bandara 2017</p>
+  <footer class="clearFloat">
+    &copy; Tanushka Bandara 2017
   </footer>
 
   <!-- Scripts -->
   <script src="jquery-3.2.1.min.js"></script>
   <script src="script.js"></script>
-
 
 </body>
 
